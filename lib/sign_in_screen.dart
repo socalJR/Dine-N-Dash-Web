@@ -107,7 +107,7 @@ class _sign_in_screen extends State<sign_in_screen> {
                 ),
                 Container(
                   width: 400,
-                  padding: EdgeInsets.fromLTRB(50,50,50,125),
+                  padding: EdgeInsets.fromLTRB(50,50,50,90),
                   child: TextField(
                       textAlign: TextAlign.center,
                       obscureText: true,
