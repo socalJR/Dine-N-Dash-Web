@@ -65,7 +65,6 @@ class _sign_in_screen extends State<sign_in_screen> {
                 //Spacer(),
 
                 //Dine n' Dash Logo
-                //Icon(Icons.alarm),
                 Padding(
                   padding: EdgeInsets.all(50),
                   child: Image.asset(
@@ -79,7 +78,8 @@ class _sign_in_screen extends State<sign_in_screen> {
                   style: TextStyle(fontSize: 14, color: Colors.white),
                 ),
                 Container(
-                  width: 300,
+                  width: 400,
+                  padding: EdgeInsets.all(50),
                   child: TextField(
                       keyboardType: TextInputType.emailAddress,
                       textAlign: TextAlign.center,
@@ -106,7 +106,8 @@ class _sign_in_screen extends State<sign_in_screen> {
                   style: TextStyle(fontSize: 14, color: Colors.white),
                 ),
                 Container(
-                  width: 300,
+                  width: 400,
+                  padding: EdgeInsets.fromLTRB(50,50,50,125),
                   child: TextField(
                       textAlign: TextAlign.center,
                       obscureText: true,
