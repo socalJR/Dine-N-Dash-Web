@@ -36,12 +36,32 @@ class NavigationBar extends StatelessWidget {
   }
 }
 
+//class _NavBarProfile extends StatelessWidget {
+//  final String name;
+//  final String title;
+//  const _NavBarProfile(
+//      this.name, {
+//        Key key, this.title,
+//  }) : super(key: key);
+//
+//  @override
+//  Widget build(BuildContext context) {
+//    return Text(
+//      title,
+//      style: TextStyle(
+//          color: Colors.white,
+//          fontSize: 16
+//      ),
+//    );
+//  }
+//}
 class _NavBarItem extends StatelessWidget {
   final String title;
   const _NavBarItem(
       this.title, {
         Key key,
       }) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {
