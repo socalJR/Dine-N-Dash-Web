@@ -35,7 +35,7 @@ class NavigationBar extends StatelessWidget {
                 width: 30,
               ),
               SizedBox(width: 5),
-              Text('First Last', style: TextStyle(fontSize: 16, color: Colors.white, fontWeight: FontWeight.normal)),
+              Text('First Last', style: TextStyle(fontSize: 16, color: Colors.white,)),
               //SizedBox( width: 5,),
               IconButton(
                 icon: Icon(Icons.arrow_drop_down, color: Colors.white, size:25,),
