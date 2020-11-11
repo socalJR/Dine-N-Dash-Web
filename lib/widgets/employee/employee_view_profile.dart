@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class EmployeeProfile extends StatelessWidget {
   @override
@@ -11,16 +12,17 @@ class EmployeeProfile extends StatelessWidget {
                   //Spacer(),
                   //Dine n' Dash Logo
                   SizedBox(
-                    height: 350,
-                    width: 350,
+                    height: 300,
+                    width: 300,
                     child: Image.asset('assets/pfpBig.png'),
                   ),
-                  //SizedBox(height: 20),
-                  Text(
-                    'Employee Name',
-                    style: TextStyle(fontSize: 24, color: Colors.white),
+                  SizedBox(height: 20),
+                  ListTile(
+                    dense: true,
+                    contentPadding: EdgeInsets.only(left: 400.0, right: 400.0),
+                    title: Text('Employee Name', style: TextStyle(fontSize: 24, color: Colors.white)),
+                    trailing: Icon(Icons.edit, color: Colors.white,size: 25),
                   ),
-
                   SizedBox(height: 10),
                   Text(
                     'ID #',

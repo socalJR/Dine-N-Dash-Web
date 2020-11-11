@@ -1,6 +1,6 @@
 import 'package:dinendash_web/widgets/NavigationBar/navigation_bar.dart';
 import 'package:dinendash_web/widgets/centered_view/centered_view.dart';
-import 'package:dinendash_web/widgets/employee_views/employee_view_profile.dart';
+import 'package:dinendash_web/widgets/employee/employee_view_profile.dart';
 import 'package:flutter/material.dart';
 
 class RestaurantHomeView extends StatelessWidget {

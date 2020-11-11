@@ -1,4 +1,5 @@
 import 'package:dinendash_web/views/restaurant_home_view.dart';
+import 'package:dinendash_web/views/employee_splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:dinendash_web/sign_in_screen.dart';
 
@@ -32,7 +33,8 @@ class MyApp extends StatelessWidget {
         bottomSheetTheme: BottomSheetThemeData(
             backgroundColor: Colors.black.withOpacity(0)),
       ),
-      home: RestaurantHomeView(),
+      //home: RestaurantHomeView(),
+      home: EmployeeSplashScreen()
     );
   }
 }
