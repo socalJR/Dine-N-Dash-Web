@@ -1,4 +1,7 @@
 import 'package:dinendash_web/restaurant_menu.dart';
+import 'package:dinendash_web/restuarant_empty.dart';
+import 'package:dinendash_web/revenue_report.dart';
+import 'package:dinendash_web/views/restaurant_home_view.dart';
 import 'package:flutter/material.dart';
 
 class NavigationBar extends StatelessWidget {
@@ -26,14 +29,14 @@ class NavigationBar extends StatelessWidget {
                 width: 40,
               ),
               FlatButton(
-                onPressed: (){},
+                onPressed: (){Navigator.push(context,MaterialPageRoute(builder: (context) => RevenueReport()));},
               child: _NavBarItem('REVENUE REPORT'),
               ),
               SizedBox(
                 width: 40,
               ),
               FlatButton(
-                onPressed: (){},
+                onPressed: (){Navigator.push(context,MaterialPageRoute(builder: (context) => RestaurantHomeView()));},
               child: _NavBarItem('PROFILE'),
               ),
               SizedBox(

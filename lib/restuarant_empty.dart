@@ -1,3 +1,5 @@
+import 'package:dinendash_web/restaurant_menu.dart';
+
 import 'package:dinendash_web/widgets/NavigationBar/navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -87,7 +89,7 @@ class RestaurantEmpty extends StatelessWidget {
 
                   Container(
                     child: FlatButton(
-                      onPressed: (){},
+                      onPressed: (){Navigator.push(context,MaterialPageRoute(builder: (context) => RestaurantMenu()));},
                       child: new Text(
                         'Appetizers',
                         style: TextStyle(

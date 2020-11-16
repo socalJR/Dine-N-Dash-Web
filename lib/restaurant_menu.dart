@@ -1,6 +1,9 @@
+import 'package:dinendash_web/restaurant_editMenu.dart';
+import 'package:dinendash_web/restuarant_empty.dart';
 import 'package:dinendash_web/widgets/NavigationBar/navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+
 
 class RestaurantMenu extends StatelessWidget {
   const RestaurantMenu({Key key}) : super(key: key);
@@ -68,7 +71,7 @@ class RestaurantMenu extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10))
                     ),
-                    onPressed: (){},
+                    onPressed: (){Navigator.push(context,MaterialPageRoute(builder: (context) => RestaurantEditMenu()));},
                     color: const Color(0xfffd1040),
                     child: Text('Buffalo \nWings'),
                     textColor: Colors.white,
@@ -173,7 +176,7 @@ class RestaurantMenu extends StatelessWidget {
 
                   Container(
                     child: FlatButton(
-                      onPressed: (){},
+                      onPressed: (){Navigator.push(context,MaterialPageRoute(builder: (context) => RestaurantMenu()));},
                       child: new Text(
                         'Appetizers',
                         style: TextStyle(
@@ -185,7 +188,7 @@ class RestaurantMenu extends StatelessWidget {
                   ),
                   Container(
                     child: FlatButton(
-                      onPressed: (){},
+                      onPressed: (){Navigator.push(context,MaterialPageRoute(builder: (context) => RestaurantEmpty()));},
                       child: new Text(
                         'Entrees',
                         style: TextStyle(
