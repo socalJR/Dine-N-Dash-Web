@@ -1,3 +1,4 @@
+import 'package:dinendash_web/restaurant_menu.dart';
 import 'package:dinendash_web/restuarant_empty.dart';
 import 'package:dinendash_web/views/restaurant_home_view.dart';
 import 'package:dinendash_web/views/employee_splash_view.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.black.withOpacity(0)),
       ),
       //home: RestaurantHomeView(),
-      home:RestaurantEmpty()
+      home:RestaurantMenu()
     );
   }
 }
