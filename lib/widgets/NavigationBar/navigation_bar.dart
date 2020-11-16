@@ -1,3 +1,4 @@
+import 'package:dinendash_web/restaurant_menu.dart';
 import 'package:flutter/material.dart';
 
 class NavigationBar extends StatelessWidget {
@@ -16,15 +17,25 @@ class NavigationBar extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              _NavBarItem('RESTAURANT'),
+              FlatButton(
+                onPressed: (){Navigator.push(context,MaterialPageRoute(builder: (context) => RestaurantMenu()));},
+
+              child: _NavBarItem('RESTAURANT'),
+              ),
               SizedBox(
                 width: 40,
               ),
-              _NavBarItem('REVENUE REPORT'),
+              FlatButton(
+                onPressed: (){},
+              child: _NavBarItem('REVENUE REPORT'),
+              ),
               SizedBox(
                 width: 40,
               ),
-              _NavBarItem('PROFILE'),
+              FlatButton(
+                onPressed: (){},
+              child: _NavBarItem('PROFILE'),
+              ),
               SizedBox(
                 width: 40,
               ),

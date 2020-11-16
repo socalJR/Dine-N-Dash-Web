@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.black.withOpacity(0)),
       ),
       //home: RestaurantHomeView(),
-      home:RestaurantMenu()
+      home:RestaurantHomeView()
     );
   }
 }
