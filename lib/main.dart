@@ -1,10 +1,7 @@
-<<<<<<< Updated upstream
-=======
-import 'package:dinendash_web/restaurant_main.dart';
+import 'package:dinendash_web/restaurant_menu.dart';
 import 'package:dinendash_web/restuarant_empty.dart';
 import 'package:dinendash_web/views/restaurant_home_view.dart';
 import 'package:dinendash_web/views/employee_splash_view.dart';
->>>>>>> Stashed changes
 import 'package:flutter/material.dart';
 import 'package:dinendash_web/sign_in_screen.dart';
 
@@ -38,7 +35,8 @@ class MyApp extends StatelessWidget {
         bottomSheetTheme: BottomSheetThemeData(
             backgroundColor: Colors.black.withOpacity(0)),
       ),
-      home: sign_in_screen(title: 'Flutter Demo Home Page'),
+      //home: RestaurantHomeView(),
+      home:RestaurantHomeView()
     );
   }
 }

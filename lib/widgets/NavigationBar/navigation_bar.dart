@@ -1,4 +1,4 @@
-import 'package:dinendash_web/restaurant_main.dart';
+import 'package:dinendash_web/restaurant_menu.dart';
 import 'package:flutter/material.dart';
 
 class NavigationBar extends StatelessWidget {
