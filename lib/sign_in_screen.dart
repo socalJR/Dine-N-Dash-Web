@@ -47,7 +47,8 @@ class _sign_in_screen extends State<sign_in_screen> {
       // floatingActionButton: _floatingActionButtonTester(),
 
       body: SingleChildScrollView(
-        padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
+        padding:
+            EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
         child: Container(
           height: MediaQuery.of(context).size.height,
           decoration: BoxDecoration(
@@ -56,114 +57,109 @@ class _sign_in_screen extends State<sign_in_screen> {
                 end: Alignment.bottomLeft,
                 colors: [Color(0xFFFF0041), Color(0xFFFB8E40)]),
           ),
-
-          child:Center(
+          child: Center(
             child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                //Spacer(),
 
-                children: <Widget>[
-                  //Spacer(),
-
-                  //Dine n' Dash Logo
-                  Padding(
-                    padding: EdgeInsets.all(20),
-                    child: Image.asset(
-                      'whiteLogo.png',
-                      height: 300,
-                    ),
+                //Dine n' Dash Logo
+                Padding(
+                  padding: EdgeInsets.all(20),
+                  child: Image.asset(
+                    'whiteLogo.png',
+                    height: 300,
                   ),
-                  //SizedBox(height: 20),
-                  Text(
-                    'EMAIL/USERNAME',
-                    style: TextStyle(fontSize: 14, color: Colors.white),
-                  ),
-                  Container(
-                    width: 400,
-                    padding: EdgeInsets.all(20),
-                    child: TextField(
-                        keyboardType: TextInputType.emailAddress,
-                        textAlign: TextAlign.center,
-                        obscureText: false,
-                        style: TextStyle(fontSize: 14, color: Colors.white),
-                        decoration: InputDecoration(
-                          enabledBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Colors.white, width: 1.0),
-                          ),
-                          focusedBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Colors.white, width: 1.0),
-                          ),
-                          border: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Colors.white, width: 1.0),
-                          ),
+                ),
+                //SizedBox(height: 20),
+                Text(
+                  'EMAIL/USERNAME',
+                  style: TextStyle(fontSize: 14, color: Colors.white),
+                ),
+                Container(
+                  width: 400,
+                  padding: EdgeInsets.all(20),
+                  child: TextField(
+                      keyboardType: TextInputType.emailAddress,
+                      textAlign: TextAlign.center,
+                      obscureText: false,
+                      style: TextStyle(fontSize: 14, color: Colors.white),
+                      decoration: InputDecoration(
+                        enabledBorder: UnderlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Colors.white, width: 1.0),
                         ),
-                        onChanged: (value) {
-                          email = value;
-                        }),
-                  ),
-                  //SizedBox(height: 20),
-                  Text(
-                    'PASSWORD',
-                    style: TextStyle(fontSize: 14, color: Colors.white),
-                  ),
-                  Container(
-                    width: 400,
-                    padding: EdgeInsets.all(20),
-                    child: TextField(
-                        textAlign: TextAlign.center,
-                        obscureText: true,
-                        style: TextStyle(fontSize: 14, color: Colors.white),
-                        decoration: InputDecoration(
-                          enabledBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Colors.white, width: 1.0),
-                          ),
-                          focusedBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Colors.white, width: 1.0),
-                          ),
-                          border: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Colors.white, width: 1.0),
-                          ),
+                        focusedBorder: UnderlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Colors.white, width: 1.0),
                         ),
-                        onChanged: (value) {
-                          password = value;
-                        }),
-                  ),
-                  Container(
-                    padding: EdgeInsets.all(20),
-                    child: FlatButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(18.0),
-                          side: BorderSide(color: Colors.white)),
-                      //color: Colors.white,
-                      textColor: Colors.white,
-                      padding: EdgeInsets.all(16.0),
-                      onPressed: () {},
-                      child: Text(
-                        "Sign In",
-                        style: TextStyle(
-                          fontSize: 14,
+                        border: UnderlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Colors.white, width: 1.0),
                         ),
+                      ),
+                      onChanged: (value) {
+                        email = value;
+                      }),
+                ),
+                //SizedBox(height: 20),
+                Text(
+                  'PASSWORD',
+                  style: TextStyle(fontSize: 14, color: Colors.white),
+                ),
+                Container(
+                  width: 400,
+                  padding: EdgeInsets.all(20),
+                  child: TextField(
+                      textAlign: TextAlign.center,
+                      obscureText: true,
+                      style: TextStyle(fontSize: 14, color: Colors.white),
+                      decoration: InputDecoration(
+                        enabledBorder: UnderlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Colors.white, width: 1.0),
+                        ),
+                        focusedBorder: UnderlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Colors.white, width: 1.0),
+                        ),
+                        border: UnderlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Colors.white, width: 1.0),
+                        ),
+                      ),
+                      onChanged: (value) {
+                        password = value;
+                      }),
+                ),
+                Container(
+                  padding: EdgeInsets.all(20),
+                  child: FlatButton(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        side: BorderSide(color: Colors.white)),
+                    //color: Colors.white,
+                    textColor: Colors.white,
+                    padding: EdgeInsets.all(16.0),
+                    onPressed: () {},
+                    child: Text(
+                      "Sign In",
+                      style: TextStyle(
+                        fontSize: 14,
                       ),
                     ),
                   ),
-                  Container(
-                    padding: EdgeInsets.fromLTRB(0,0,0,50 ),
-                       child: FlatButton(
-                         shape: RoundedRectangleBorder(
-                             borderRadius: BorderRadius.circular(18.0),
-                             side: BorderSide(color: Colors.white)),
-                          //child: Image.asset("assets/googleButton.png", width: 50),
-                         child: Text(
-                           "Sign in with Google",
-                           style: TextStyle(
-                             fontSize: 14,
-                             color: Colors.white
-                           ),
-                         ),
-                          padding: EdgeInsets.all(16),
-                          onPressed: () {},
-                    ),
+                ),
+                Container(
+                  padding: EdgeInsets.fromLTRB(0, 0, 0, 50),
+                  child: FlatButton(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        side: BorderSide(color: Colors.white)),
+                    child: Image.asset("assets/googleButton.png", width: 150),
                   ),
-                ]
+                ),
+              ],
             ),
           ),
         ),
