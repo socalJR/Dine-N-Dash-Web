@@ -148,8 +148,18 @@ class _sign_in_screen extends State<sign_in_screen> {
                   Container(
                     padding: EdgeInsets.fromLTRB(0,0,0,50 ),
                        child: FlatButton(
-                          child: Image.asset("assets/google.png", width: 175),
-                          padding: EdgeInsets.all(0.0),
+                         shape: RoundedRectangleBorder(
+                             borderRadius: BorderRadius.circular(18.0),
+                             side: BorderSide(color: Colors.white)),
+                          //child: Image.asset("assets/googleButton.png", width: 50),
+                         child: Text(
+                           "Sign in with Google",
+                           style: TextStyle(
+                             fontSize: 14,
+                             color: Colors.white
+                           ),
+                         ),
+                          padding: EdgeInsets.all(16),
                           onPressed: () {},
                     ),
                   ),
