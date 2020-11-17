@@ -146,9 +146,9 @@ class _sign_in_screen extends State<sign_in_screen> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.all(20),
+                    padding: EdgeInsets.fromLTRB(0,0,0,50 ),
                        child: FlatButton(
-                          child: Image.asset("assets/google.png", width: 100),
+                          child: Image.asset("assets/google.png", width: 175),
                           padding: EdgeInsets.all(0.0),
                           onPressed: () {},
                     ),
