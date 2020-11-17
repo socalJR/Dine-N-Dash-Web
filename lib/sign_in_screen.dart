@@ -128,7 +128,7 @@ class _sign_in_screen extends State<sign_in_screen> {
                         }),
                   ),
                   Container(
-                    padding: EdgeInsets.fromLTRB(20,0,0,50),
+                    padding: EdgeInsets.all(20),
                     child: FlatButton(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(18.0),
@@ -143,6 +143,14 @@ class _sign_in_screen extends State<sign_in_screen> {
                           fontSize: 14,
                         ),
                       ),
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(20),
+                       child: FlatButton(
+                          child: Image.asset("assets/google.png"),
+                          padding: EdgeInsets.all(0.0),
+                          onPressed: () {},
                     ),
                   ),
                 ]
