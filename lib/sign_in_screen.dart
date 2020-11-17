@@ -66,7 +66,7 @@ class _sign_in_screen extends State<sign_in_screen> {
 
                   //Dine n' Dash Logo
                   Padding(
-                    padding: EdgeInsets.all(50),
+                    padding: EdgeInsets.all(20),
                     child: Image.asset(
                       'whiteLogo.png',
                       height: 300,
@@ -79,7 +79,7 @@ class _sign_in_screen extends State<sign_in_screen> {
                   ),
                   Container(
                     width: 400,
-                    padding: EdgeInsets.all(50),
+                    padding: EdgeInsets.all(20),
                     child: TextField(
                         keyboardType: TextInputType.emailAddress,
                         textAlign: TextAlign.center,
@@ -107,7 +107,7 @@ class _sign_in_screen extends State<sign_in_screen> {
                   ),
                   Container(
                     width: 400,
-                    padding: EdgeInsets.fromLTRB(50,50,50,90),
+                    padding: EdgeInsets.all(20),
                     child: TextField(
                         textAlign: TextAlign.center,
                         obscureText: true,
@@ -126,6 +126,24 @@ class _sign_in_screen extends State<sign_in_screen> {
                         onChanged: (value) {
                           password = value;
                         }),
+                  ),
+                  Container(
+                    padding: EdgeInsets.fromLTRB(20,0,0,50),
+                    child: FlatButton(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(18.0),
+                          side: BorderSide(color: Colors.white)),
+                      //color: Colors.white,
+                      textColor: Colors.white,
+                      padding: EdgeInsets.all(16.0),
+                      onPressed: () {},
+                      child: Text(
+                        "Sign In",
+                        style: TextStyle(
+                          fontSize: 14,
+                        ),
+                      ),
+                    ),
                   ),
                 ]
             ),
