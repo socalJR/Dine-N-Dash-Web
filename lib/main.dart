@@ -34,6 +34,9 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
         bottomSheetTheme: BottomSheetThemeData(
             backgroundColor: Colors.black.withOpacity(0)),
+          textTheme: Theme.of(context)
+              .textTheme
+              .apply(bodyColor: Colors.white)
       ),
       //home: RestaurantHomeView(),
       home:RestaurantHomeView()
