@@ -79,7 +79,6 @@ class _sign_in_screen extends State<sign_in_screen> {
                 ),
                 Container(
                   width: 400,
-newSignIn
                   padding: EdgeInsets.all(20),
 
                   child: TextField(
@@ -112,7 +111,6 @@ newSignIn
                 ),
                 Container(
                   width: 400,
-newSignIn
                   padding: EdgeInsets.all(20),
                   child: TextField(
                       textAlign: TextAlign.center,

@@ -62,8 +62,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-    assets:
-        - assets/
   flutter_test:
     dependency: "direct dev"
     description: flutter
