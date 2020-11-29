@@ -65,19 +65,26 @@ class _sign_in_screen extends State<sign_in_screen> {
                 //Spacer(),
 
                 //Dine n' Dash Logo
-                Icon(Icons.alarm),
-                SizedBox(height: 60),
+                Padding(
+                  padding: EdgeInsets.all(50),
+                  child: Image.asset(
+                      'whiteLogo.png',
+                      height: 300,
+                  ),
+                ),
+                //SizedBox(height: 20),
                 Text(
                   'EMAIL/USERNAME',
                   style: TextStyle(fontSize: 14, color: Colors.white),
                 ),
                 Container(
-                  width: 300,
+                  width: 400,
+                  padding: EdgeInsets.all(50),
                   child: TextField(
                       keyboardType: TextInputType.emailAddress,
                       textAlign: TextAlign.center,
                       obscureText: false,
-                      style: TextStyle(fontSize: 18, color: Colors.white),
+                      style: TextStyle(fontSize: 14, color: Colors.white),
                       decoration: InputDecoration(
                         enabledBorder: UnderlineInputBorder(
                           borderSide: BorderSide(color: Colors.white, width: 1.0),
@@ -93,17 +100,18 @@ class _sign_in_screen extends State<sign_in_screen> {
                         email = value;
                       }),
                 ),
-                SizedBox(height: 20),
+                //SizedBox(height: 20),
                 Text(
                   'PASSWORD',
                   style: TextStyle(fontSize: 14, color: Colors.white),
                 ),
                 Container(
-                  width: 300,
+                  width: 400,
+                  padding: EdgeInsets.fromLTRB(50,50,50,90),
                   child: TextField(
                       textAlign: TextAlign.center,
                       obscureText: true,
-                      style: TextStyle(fontSize: 18, color: Colors.white),
+                      style: TextStyle(fontSize: 14, color: Colors.white),
                       decoration: InputDecoration(
                         enabledBorder: UnderlineInputBorder(
                           borderSide: BorderSide(color: Colors.white, width: 1.0),
