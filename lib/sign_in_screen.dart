@@ -69,6 +69,7 @@ class _sign_in_screen extends State<sign_in_screen> {
                   child: Image.asset(
                     'whiteLogo.png',
                     height: 300,
+
                   ),
                 ),
                 //SizedBox(height: 20),
@@ -78,7 +79,9 @@ class _sign_in_screen extends State<sign_in_screen> {
                 ),
                 Container(
                   width: 400,
+newSignIn
                   padding: EdgeInsets.all(20),
+
                   child: TextField(
                       keyboardType: TextInputType.emailAddress,
                       textAlign: TextAlign.center,
@@ -109,6 +112,7 @@ class _sign_in_screen extends State<sign_in_screen> {
                 ),
                 Container(
                   width: 400,
+newSignIn
                   padding: EdgeInsets.all(20),
                   child: TextField(
                       textAlign: TextAlign.center,
