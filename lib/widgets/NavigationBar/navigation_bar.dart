@@ -49,12 +49,43 @@ class NavigationBar extends StatelessWidget {
                 width: 30,
               ),
               SizedBox(width: 5),
-              Text('First Last', style: TextStyle(fontSize: 16, color: Colors.white,)),
+              //Text('First Last', style: TextStyle(fontSize: 16, color: Colors.white,)),
               //SizedBox( width: 5,),
-              IconButton(
-                icon: Icon(Icons.arrow_drop_down, color: Colors.white, size:25,),
-                onPressed: () {},
-              ),
+//              IconButton(
+//                icon: Icon(Icons.arrow_drop_down, color: Colors.white, size:25,),
+//                onPressed: () {
+//                  print('Button Pressed');
+//                },
+//              ),
+//              new DropdownButton<String>(
+//                items: <String>['A', 'B', 'C', 'D'].map((String value) {
+//                  return new DropdownMenuItem<String>(
+//                    value: value,
+//                    child: new Text(value),
+//                  );
+//                }).toList(),
+//                onChanged: (_) {},
+//              )
+
+              new DropdownButton<String>(
+                icon: Icon(Icons.arrow_drop_down, color: Colors.white, size: 25),
+                style: TextStyle(color: Color(0xFFFF0041)),
+                items: <String>['View Profile', 'Logout',]
+                    .map<DropdownMenuItem<String>>((String value) {
+                  return new DropdownMenuItem<String>(
+                    value: value,
+                    child: Text(value),
+                  );
+                }).toList(),
+                  onChanged: (_) {},
+                hint: Text(
+                  "First Last",
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.white,
+                  ),
+                ),
+              )
             ],
           )
         ],
@@ -62,40 +93,6 @@ class NavigationBar extends StatelessWidget {
     );
   }
 }
-
-class _NavBarProfile extends StatelessWidget {
-  final String name;
-  final String title;
-  const _NavBarProfile(
-      this.name, {
-        Key key, this.title,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 50,
-      child: ListTile(
-        leading: Image.asset(
-         "assets/pfp.png",
-          height: 85,
-          width: 85,
-        ),
-        title: Text(name, style: TextStyle(fontSize: 16)), //employee name
-        subtitle: Text(title, style: TextStyle(fontSize: 12)), //employee title
-        trailing: Row(
-            mainAxisSize: MainAxisSize.min,
-            children:[
-              IconButton(
-                icon: Icon(Icons.arrow_drop_down, color: Colors.grey, size:25,),
-                onPressed: () {},
-              ),
-            ]),
-      ),
-    );
-  }
-}
-
 
 class _NavBarItem extends StatelessWidget {
   final String title;
@@ -116,3 +113,65 @@ class _NavBarItem extends StatelessWidget {
     );
   }
 }
+
+//class DropDown extends StatefulWidget {
+//  DropDown() : super();
+//
+//  //final String title = "DropDown Demo";
+//
+//  @override
+//  DropDownState createState() => DropDownState();
+//}
+//
+//class NavOptions {
+//  int id;
+//  String name;
+//
+//  NavOptions(this.id, this.name);
+//
+//  static List<NavOptions> getNavOptions() {
+//    return <NavOptions>[
+//      NavOptions(1, 'View Profile'),
+//      NavOptions(2, 'Logout'),
+//    ];
+//  }
+//}
+//
+//class DropDownState extends State<DropDown> {
+//  //
+//  List<NavOptions> _navOptions = NavOptions.getNavOptions();
+//  List<DropdownMenuItem<NavOptions>> _dropdownMenuItems;
+//  NavOptions _selectedNavOptions;
+//
+//  @override
+//  void initState() {
+//    _dropdownMenuItems = buildDropdownMenuItems(_navOptions);
+//    _selectedNavOptions = _dropdownMenuItems[0].value;
+//    super.initState();
+//  }
+//
+//  List<DropdownMenuItem<NavOptions>> buildDropdownMenuItems(List navOptions) {
+//    List<DropdownMenuItem<NavOptions>> items = List();
+//    for (NavOptions navOptions in navOptions) {
+//      items.add(
+//        DropdownMenuItem(
+//          value: navOptions,
+//          child: Text(navOptions.name),
+//        ),
+//      );
+//    }
+//    return items;
+//  }
+//
+//  onChangeDropdownItem(NavOptions selectedNavOptions) {
+//    setState(() {
+//      _selectedNavOptions = selectedNavOptions;
+//    });
+//  }
+//
+//  @override
+//  Widget build(BuildContext context) {
+//    // TODO: implement build
+//    throw UnimplementedError();
+//  }
+//}
