@@ -38,8 +38,8 @@ class MyApp extends StatelessWidget {
               .textTheme
               .apply(bodyColor: Colors.white)
       ),
-      //home: RestaurantHomeView(),
-      home:sign_in_screen()
+      home: RestaurantHomeView(),
+      //home:sign_in_screen()
     );
   }
 }
